@@ -1,0 +1,172 @@
+<div class="wrapper">
+  <header class="header">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <button (click)="toggleOpened()" class="header__toggle">Toggle sidebar</button>
+        <span>My Retail Store</span>
+        <div class="navbar-nav mx-auto">
+          hello
+        </div>
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link logout" title="Logout" (click)="logout()"><i class="fas fa-sign-out-alt"></i>Signout</a>
+      </div>
+    </nav>
+  </header>
+  <!-- sidebar-->
+  <ng-sidebar-container>
+    <ng-sidebar [opened]="opened">
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a>Welcome</a>
+          </div>
+          <div class="sidebar-header">
+            <div class="user-pic">
+              <img class="img-responsive img-rounded"
+                src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                alt="User picture">
+            </div>
+            <div class="user-info">
+              <span class="user-name">Jhon Smith</span>
+              <span class="user-role">Administrator</span>
+              <span class="user-status">
+                <i class="fa fa-circle"></i>
+                <span>Online</span>
+              </span>
+            </div>
+          </div>
+          <!-- sidebar-header  -->
+          <div class="sidebar-search">
+            <div>
+              <div class="input-group">
+                <input type="text" class="form-control search-menu" placeholder="Search...">
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sidebar-search  -->
+          <div class="sidebar-menu">
+            <ul>
+              <li class="sidebar-dropdown">
+                <a>
+                  <i class="fa fa-home"></i>
+                  <span>Dashboard</span>
+                  <span class="badge badge-pill badge-warning">New</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Dashboard 1
+                        <span class="badge badge-pill badge-success">Pro</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a>
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>Work Orders</span>
+                  <span class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Products
+                      </a>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a>
+                  <i class="far fa-gem"></i>
+                  <span>Sync Orders</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a>
+                  <i class="fa fa-chart-line"></i>
+                  <span>Reports</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Pie chart</a>
+                    </li>
+                    <li>
+                      <a href="#">Line chart</a>
+                    </li>
+                    <li>
+                      <a href="#">Bar chart</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a>
+                  <i class="fa fa-globe"></i>
+                  <span>Maps</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Google maps</a>
+                    </li>
+                    <li>
+                      <a href="#">Open street map</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a>
+                  <i class="fa fa-book"></i>
+                  <span>Documentation</span>
+                  <span class="badge badge-pill badge-primary">Beta</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="fa fa-calendar"></i>
+                  <span>Calendar</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-content  -->
+        <div class="sidebar-footer">
+          <a href="#">
+            <i class="fa fa-bell"></i>
+            <span class="badge badge-pill badge-warning notification">3</span>
+          </a>
+          <a href="#">
+            <i class="fa fa-envelope"></i>
+            <span class="badge badge-pill badge-success notification">7</span>
+          </a>
+          <a href="#">
+            <i class="fa fa-cog"></i>
+            <span class="badge-sonar"></span>
+          </a>
+        </div>
+      </nav>
+    </ng-sidebar>
+    <div ng-sidebar-content id="main-contents">
+      <router-outlet></router-outlet>
+    </div>
+  </ng-sidebar-container>
+  <!-- offsidebar-->
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="http://sairamvuppari.epizy.com/" target="_blank"> sairamvuppari</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>

@@ -1,0 +1,166 @@
+<div class="main-content-wrapper">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <span>
+        <img src="./assets/images/logo.png" alt="logo">
+      </span>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Retail</a>
+                            <a class="dropdown-item" href="#">utilities</a>
+                            <a class="dropdown-item" href="#">Communications</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Other Domains</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Innovation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" (click)="onclicklogin()" type="button">Login</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="bd-masthead" id="content" role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto col-md-6 order-md-2">
+                    <video class="videolayout" oncanplay="this.muted=false" controls src="./assets/videos/Home_E&U.mp4"></video>
+                </div>
+                <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+                    <h3 class="mb-3 bd-text-purple-bright">HOW IT WORKS?</h3>
+                    <p class="lead">
+                        These days, there is a growing trend of online shopping thanks to the convenience of internet usage. We can’t deny that this trend creates significant changes in customers behaviors, or more clearly, the way people buy and spend on things. Customers can
+                        surf the web, find the products they want, purchase, and wait for those goods to be delivered right to their places while staying at home, sitting on their favorite couch, or lying on their comfortable bed.
+                    </p>
+                    <p class="lead">
+                        The easier online shopping is, the more demanding customers are towards the services. Therefore, e-stores have to force themselves to join in a competitive race, in which stores try to fulfill all of the customers’ need as perfectly and quickly as possible.
+                    </p>
+                    <div class="row mx-n2">
+                        <div class="col-md px-2">
+                            <a><button class="btn btn-lg btn-bd-primary w-100 mb-3" data-toggle="modal" data-target="#exampleModal"
+                  style="border-color: #7952b3;">Get
+                  started</button></a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Team Work Demo</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <video class="videolayout" oncanplay="this.muted=false" controls autostart="false" src="./assets/videos/Home_E&U.mp4"></video>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="masthead-followup row m-0 border border-white">
+        <div class="col-md-4 p-3 p-md-5 bg-light border border-white">
+            <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false">
+        <title>Install</title>
+        <path d="M28 22v8H4v-8M16 4v20m-8-8l8 8 8-8"></path>
+      </svg>
+            <h3>Installation</h3>
+            <p>Includes Apk/Ipa for both android and ios users whenever there is updated release. Package managed installs do include our build system and readme.</p>
+
+            <div>
+                <h4>Android:</h4>
+                <a href="/images/myw3schoolsimage.jpg" download>
+                    <span>android apk</span>
+                </a>
+            </div>
+            <div>
+                <h4>IOS:</h4>
+                <a href="/images/myw3schoolsimage.jpg" download>
+                    <span>IOS apk</span>
+                </a>
+            </div>
+
+            <hr class="half-rule">
+            <a class="btn btn-outline-primary" style="border-color: #7952b3;" href="#">Read
+        installation docs</a>
+        </div>
+
+        <div class="col-md-4 p-3 p-md-5 bg-light border border-white">
+            <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false">
+        <title>Download</title>
+        <path d="M9 22c-9 1-8-10 0-9C6 2 23 2 22 10c10-3 10 13 1 12m-12 4l5 4 5-4m-5-10v14"></path>
+      </svg>
+            <h3>Convenience of online shopping</h3>
+            <p>A customer is not bound to specific locations or opening times anymore. He can shop for products or services at any time and place given he has connection to the internet. Certain characteristics are making online shopping handier for the
+                consumer, as compared to the traditional way of shopping, such as the ability to at any time view and purchase of products, visualising their needs with products, and discuss products with other consumers </p>
+            <h5>Information and reviews on the internet</h5>
+            <p>Internet allows quick and easy access to large volume of information. The customer can go on sites where previous customers have rated, reviewed and commented on a product to get a clear idea about it. Moreover, online stores now provide 360
+                degrees view or through virtual 3-Dimension simulation compared to earlier on when flat pictures and standard feature specifications were considered to be one of the most relevant sources of information obtained on the web when purchasing
+                online. Currently consumers have the possibility to examine the products inside out hence increasing the positive experience brought by online shopping.</p>
+            <hr class="half-rule">
+            <a class="btn btn-outline-primary" style="border-color: #7952b3;" href="#">Explore the docs</a>
+        </div>
+
+        <div class="col-md-4 p-3 p-md-5 bg-light border border-white">
+            <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false">
+        <title>Lightning</title>
+        <path d="M18 13l8-11L8 13l6 6-8 11 18-11z"></path>
+      </svg>
+            <h3>Perceived risks of online shopping</h3>
+            <p>
+                Online shopping can be perceived as a two-sided coin. On one side, it is seen as a beneficial means to shop and on the other side, there are the risks associated with it. A thorough study of the benefits and drawbacks of online shopping is necessary.
+                Oppenheim and Ward (2006) brought forward the notion that the convenience benefit is the current primary reason people shop electronically. Another advantage of online shopping is the abundance of information and reviews on products which
+                are available on the internet. Internet also offers a wide variety of products and competitive prices.
+            </p>
+            <h5>Fraud and security concerns on the internet</h5>
+            <p> It is difficult to recognize an honest trader from a fraudulent one on the internet. There are some people who can buy malwares, install them on online stores and then use them to steal banking credentials of customers. They have the ability
+                to attack specific accounts and transfer stolen funds to their accounts. There are some scammers who often sell products at a very low price just so that they can get the credit card information or bank account details of a person. They
+                may then indulge in fraudulent activities, taking the money and sending worthless or faulty items or sometimes not even anything.</p>
+            <h5>Inspection of products on the internet</h5>
+            <p>The consumer is unable to check the quality of the product online. It cannot be tasted, smelled or touched. The customer can only rely on feedbacks by previous users or the pictures and descriptions provided. Shopping online means you have
+                to wait to receive the product(s) whereas traditional shopping implies that you get your purchase right away. The consumer does not get the opportunity to inspect the product personally or try it until it arrives by post. Misunderstanding
+                and misinterpretation of some items bought on the internet is a common issue. </p>
+            <hr class="half-rule">
+            <a class="btn btn-outline-primary" style="border-color: #7952b3;" href="#">Learn More</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            <a href="http://sairamvuppari.epizy.com/" target="_blank"> sairamvuppari</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</div>
